@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: dev
+
+  application:
+    name: prova-java
+
+cors: ${CORS_ENABLED:false}
+
+logging:
+  level:
+    '[org.springframework.web]': debug
+    com.prova_java: DEBUG
+    org.springframework.web: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+springdoc:
+  swagger-ui:
+    enabled: false

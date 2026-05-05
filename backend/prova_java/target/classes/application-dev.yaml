@@ -1,0 +1,21 @@
+spring:
+
+cors: ${CORS_ENABLED:false}
+
+logging:
+  level:
+    '[org.springframework.web]': debug
+
+springdoc:
+  swagger-ui:
+    enabled: true
+
+omdb:
+  api:
+    key: ${OMDB_API_KEY:bb83fdf8}
+    url: ${OMDB_API_URL:https://www.omdbapi.com}
+
+cache:
+  ttl:
+    omdb: 3600
+  maxSize: 1000
